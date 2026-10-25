@@ -1,0 +1,92 @@
+{
+  "source": "https://storage.googleapis.com/brain-genomics-public/research/deepconsensus/training-tutorial/v1.2/",
+  "sampling": "Training: collect first 40 complete molecules in shard 00000, sample up to 160 windows per molecule and fill to 6400 without duplication, then reorder with seed 42. Evaluation/test: first complete records from their separate official shards. Original record payloads and CRCs retained. Prefix sampling is not population-random.",
+  "splits": {
+    "train": {
+      "examples": 6400,
+      "molecules": 40,
+      "bytes": 26098066,
+      "sha256": "19d32296dd06779269f3193f0b8616cd95ecd37c56798a6d92f8d41b49cb5261",
+      "uncompressed_records_sha256": "d4c353ae629d1bef8d3aa2e0c7f10ef8a35d4f13b0de307fe291014eb2c2c4d8",
+      "names": [
+        "m64062_190803_042216/102/ccs",
+        "m64062_190803_042216/119/ccs",
+        "m64062_190803_042216/131/ccs",
+        "m64062_190803_042216/135/ccs",
+        "m64062_190803_042216/14/ccs",
+        "m64062_190803_042216/141/ccs",
+        "m64062_190803_042216/142/ccs",
+        "m64062_190803_042216/144/ccs",
+        "m64062_190803_042216/16/ccs",
+        "m64062_190803_042216/165/ccs",
+        "m64062_190803_042216/185/ccs",
+        "m64062_190803_042216/189/ccs",
+        "m64062_190803_042216/194/ccs",
+        "m64062_190803_042216/198/ccs",
+        "m64062_190803_042216/199/ccs",
+        "m64062_190803_042216/209/ccs",
+        "m64062_190803_042216/217/ccs",
+        "m64062_190803_042216/22/ccs",
+        "m64062_190803_042216/226/ccs",
+        "m64062_190803_042216/23/ccs",
+        "m64062_190803_042216/233/ccs",
+        "m64062_190803_042216/237/ccs",
+        "m64062_190803_042216/242/ccs",
+        "m64062_190803_042216/246/ccs",
+        "m64062_190803_042216/252/ccs",
+        "m64062_190803_042216/26/ccs",
+        "m64062_190803_042216/261/ccs",
+        "m64062_190803_042216/262/ccs",
+        "m64062_190803_042216/270/ccs",
+        "m64062_190803_042216/32/ccs",
+        "m64062_190803_042216/33/ccs",
+        "m64062_190803_042216/41/ccs",
+        "m64062_190803_042216/46/ccs",
+        "m64062_190803_042216/59/ccs",
+        "m64062_190803_042216/61/ccs",
+        "m64062_190803_042216/64/ccs",
+        "m64062_190803_042216/78/ccs",
+        "m64062_190803_042216/81/ccs",
+        "m64062_190803_042216/84/ccs",
+        "m64062_190803_042216/89/ccs"
+      ],
+      "path": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/larger-benchmark/train.tfrecord.gz",
+      "source_shard": "tf-train-00000-of-00500.tfrecord.gz"
+    },
+    "eval": {
+      "examples": 1600,
+      "molecules": 6,
+      "bytes": 5974137,
+      "sha256": "e8e581ae43478f3ea8e5989eb6073d1db3a87bcffe37476243fbcc5cf0bc0cda",
+      "uncompressed_records_sha256": "87a666721fab6b199582427b5ad9698dd0a9b61766a81268bc4be227f3038077",
+      "names": [
+        "m64062_190803_042216/1220/ccs",
+        "m64062_190803_042216/1335/ccs",
+        "m64062_190803_042216/1555/ccs",
+        "m64062_190803_042216/2029/ccs",
+        "m64062_190803_042216/529/ccs",
+        "m64062_190803_042216/575/ccs"
+      ],
+      "path": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/larger-benchmark/eval.tfrecord.gz",
+      "source_shard": "tf-eval-00000-of-00500.tfrecord.gz"
+    },
+    "test": {
+      "examples": 800,
+      "molecules": 3,
+      "bytes": 3252431,
+      "sha256": "f29701cac19c43605d98fa8d7138e2846eae8936cf3c62577505260a1bfceaf3",
+      "uncompressed_records_sha256": "a8da9fb337005d07584f0e09113f60097e59f8b3a35c550d6d1090bd4bbe910a",
+      "names": [
+        "m64062_190803_042216/248/ccs",
+        "m64062_190803_042216/485/ccs",
+        "m64062_190803_042216/808/ccs"
+      ],
+      "path": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/larger-benchmark/test.tfrecord.gz",
+      "source_shard": "tf-test-00000-of-00500.tfrecord.gz"
+    }
+  },
+  "split_molecules_disjoint": true,
+  "train_window_size_factor_vs_1593_fixture": 4.017576898932831,
+  "train_window_size_factor_vs_1239_labeled_fixture": 5.16545601291364,
+  "all_window_size_factor_vs_1593_fixture": 5.524168236032643
+}

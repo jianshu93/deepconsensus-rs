@@ -1,0 +1,107 @@
+{
+  "batch_size": 64,
+  "dataset_read_seconds": 0.313584875,
+  "setup_seconds": 0.003591916,
+  "threads": 4,
+  "timed_scope": "CPU batch construction, encoding, transformer, logit collection; warmup, TFRecord reading, model loading, loss and decoding excluded",
+  "unique_windows": 6400,
+  "variants": {
+    "attention": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.191660708999999,
+          "seconds": 35.881977292,
+          "transformer_seconds": 34.661985536
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "combined": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.0285493750000003,
+          "seconds": 35.5455765,
+          "transformer_seconds": 34.487877583
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "embedding": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.0423753280000003,
+          "seconds": 35.423342833,
+          "transformer_seconds": 34.35332608300002
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "flatten": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.1717737409999998,
+          "seconds": 35.395179625,
+          "transformer_seconds": 34.19427407999999
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "qkv": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.1770959549999995,
+          "seconds": 36.008307709,
+          "transformer_seconds": 34.804350963
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "reference": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.1630977559999998,
+          "seconds": 35.414486292,
+          "transformer_seconds": 34.21016487500001
+        }
+      ],
+      "truth_bases": 492324
+    }
+  },
+  "windows": 6400
+}

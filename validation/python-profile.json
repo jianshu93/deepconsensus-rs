@@ -1,0 +1,161 @@
+{
+  "tensorflow": "2.20.0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "mode": "saved",
+  "preprocessing_processes": 0,
+  "tf_intra_threads": 4,
+  "tf_inter_threads": 1,
+  "batch_size": 64,
+  "batch_molecules": 2,
+  "molecules": 10,
+  "skip_above": 0,
+  "samples": [
+    {
+      "run_seconds": 9.729708874830976,
+      "setup_seconds": 0.620907082920894,
+      "processing_seconds": 9.108801791910082,
+      "outcomes": {
+        "empty_sequence": 0,
+        "only_gaps": 0,
+        "failed_quality_filter": 0,
+        "failed_length_filter": 0,
+        "success": 10
+      },
+      "stages": [
+        {
+          "item": "0",
+          "stage": "preprocess",
+          "runtime": 0.05772590637207031,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "run_model",
+          "runtime": 1.6452627182006836,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0025360584259033203,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "1",
+          "stage": "preprocess",
+          "runtime": 0.04047894477844238,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "run_model",
+          "runtime": 1.2790720462799072,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0021839141845703125,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "2",
+          "stage": "preprocess",
+          "runtime": 0.23633289337158203,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "run_model",
+          "runtime": 2.2371177673339844,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0031681060791015625,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "3",
+          "stage": "preprocess",
+          "runtime": 0.1674489974975586,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "run_model",
+          "runtime": 1.7840561866760254,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.003537893295288086,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "4",
+          "stage": "preprocess",
+          "runtime": 0.07697200775146484,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "run_model",
+          "runtime": 1.2185468673706055,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0015010833740234375,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        }
+      ],
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/saved-p0-0.fastq",
+      "profile": {
+        "formatting_seconds": 0.20858758315443993,
+        "network_seconds": 7.906862748553976
+      }
+    }
+  ],
+  "process_seconds_including_import": 11.24043745920062,
+  "compatibility": [
+    "tf-keras 2.20.1 legacy API",
+    "Read empty ndarray defaults changed to factories by import loader",
+    "unused training optimizer import omitted",
+    "official NLP package imports restricted to the two original layer implementations used by this model",
+    "macOS spawn worker initializer parses default flags before upstream preprocessing"
+  ]
+}

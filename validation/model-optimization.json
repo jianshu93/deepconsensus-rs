@@ -1,0 +1,115 @@
+{
+  "batch_size": 64,
+  "dataset_read_seconds": 0.328033875,
+  "setup_seconds": 0.00112925,
+  "threads": 4,
+  "timed_scope": "CPU batch construction, encoding, transformer, logit collection; warmup, TFRecord reading, model loading, loss and decoding excluded",
+  "unique_windows": 6400,
+  "variants": {
+    "ort-optimized": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 9,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0000438690185546875,
+      "mean_alignment_loss": 0.4888287197326771,
+      "samples": [
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 8.1085345,
+          "transformer_seconds": 8.108519916
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 8.215287917,
+          "transformer_seconds": 8.215275335999998
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 8.037073166,
+          "transformer_seconds": 8.037059999999999
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "ort-reference": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 9,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0000438690185546875,
+      "mean_alignment_loss": 0.4888287197326771,
+      "samples": [
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 8.150527958,
+          "transformer_seconds": 8.150513336999996
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 8.643764333,
+          "transformer_seconds": 8.643746798999999
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.046668291,
+          "transformer_seconds": 7.046658201999999
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "reference": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.17013579,
+          "seconds": 35.282701583,
+          "transformer_seconds": 34.082496512000006
+        },
+        {
+          "encoding_seconds": 1.1726955769999996,
+          "seconds": 35.210338375,
+          "transformer_seconds": 34.01208920799999
+        },
+        {
+          "encoding_seconds": 1.1737401259999998,
+          "seconds": 35.111850583,
+          "transformer_seconds": 33.91376732899998
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "selected": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 0,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0,
+      "mean_alignment_loss": 0.48882871964852287,
+      "samples": [
+        {
+          "encoding_seconds": 1.0385420820000002,
+          "seconds": 34.7949245,
+          "transformer_seconds": 33.729673993
+        },
+        {
+          "encoding_seconds": 1.0761119560000003,
+          "seconds": 36.686069542,
+          "transformer_seconds": 35.583828836
+        },
+        {
+          "encoding_seconds": 1.0632025009999997,
+          "seconds": 35.590147167,
+          "transformer_seconds": 34.501093911000005
+        }
+      ],
+      "truth_bases": 492324
+    }
+  },
+  "windows": 6400
+}

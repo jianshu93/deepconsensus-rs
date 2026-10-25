@@ -1,0 +1,11 @@
+{
+  "filtered": 0,
+  "model_seconds": 9.998525956999998,
+  "model_windows": 1593,
+  "molecules": 10,
+  "output_bases": 109143,
+  "preprocess_seconds": 0.022298165999999998,
+  "skipped_windows": 0,
+  "total_seconds": 10.037343625,
+  "written": 10
+}

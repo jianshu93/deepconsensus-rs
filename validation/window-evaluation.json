@@ -1,0 +1,7 @@
+{
+  "edit_errors": 49,
+  "error_rate": 0.004239854633555421,
+  "examples": 140,
+  "mean_alignment_loss": 1.2935509747078804,
+  "truth_bases": 11557
+}

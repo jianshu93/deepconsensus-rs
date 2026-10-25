@@ -1,0 +1,45 @@
+{
+  "framework": "upstream DeepConsensus model and dense differentiable alignment loss on TensorFlow 2.20.0",
+  "training_recipe": {
+    "warm_start": "published v1.2",
+    "model_layers": 5,
+    "batch_size": 32,
+    "learning_rate": 3e-06,
+    "beta1": 0.9,
+    "beta2": 0.997,
+    "epsilon": 1e-09,
+    "weight_decay": 0.0,
+    "dropout": 0.0,
+    "shuffle": "pre-shuffled identical file; no in-loop reshuffle",
+    "loss_reg": 0.1,
+    "del_cost": 10.0,
+    "band_width": null
+  },
+  "compile_seconds": 0.90906604193151,
+  "initial_first_batch_loss": 0.14307722449302673,
+  "epoch_seconds_including_input_and_checkpoint": 2.7918722480535507e-06,
+  "steps": [],
+  "evaluation": {
+    "eval": {
+      "examples": 1600,
+      "mean_alignment_loss": 0.3094382101297379,
+      "edit_errors": 147,
+      "truth_bases": 122929,
+      "error_rate": 0.0011958122168080761,
+      "seconds": 8.711007416015491
+    },
+    "test": {
+      "examples": 800,
+      "mean_alignment_loss": 0.6369364446401596,
+      "edit_errors": 140,
+      "truth_bases": 61656,
+      "error_rate": 0.002270663033605813,
+      "seconds": 4.440878875087947
+    }
+  },
+  "limitations": [
+    "Common controlled optimizer recipe; not upstream default LAMB trainer or its per-step identity metrics",
+    "Warm-start short CPU experiment, not converged de novo training",
+    "Evaluation/test are separate fine-tuning splits; disjointness from published checkpoint pretraining is not established"
+  ]
+}

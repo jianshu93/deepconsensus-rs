@@ -1,0 +1,68 @@
+{
+  "unique_training_windows": 6400,
+  "forward": {
+    "reference": {
+      "seconds": 35.210338375,
+      "encoding_seconds": 1.1726955769999996,
+      "changed_sequences": 0,
+      "changed_quality_windows": 0,
+      "max_logit_difference": 0.0
+    },
+    "selected": {
+      "seconds": 35.590147167,
+      "encoding_seconds": 1.0632025009999997,
+      "changed_sequences": 0,
+      "changed_quality_windows": 0,
+      "max_logit_difference": 0.0
+    },
+    "ort-optimized": {
+      "seconds": 7.6869214585000005,
+      "changed_sequences": 0,
+      "changed_quality_windows": 9,
+      "max_logit_difference": 4.38690185546875e-05
+    },
+    "ort-reference": {
+      "seconds": 6.941889542,
+      "changed_sequences": 0,
+      "changed_quality_windows": 9,
+      "max_logit_difference": 4.38690185546875e-05
+    },
+    "python": {
+      "seconds": 29.602185084018856,
+      "changed_argmax_columns": 0,
+      "max_probability_difference": 5.7220458984375e-06
+    }
+  },
+  "training": {
+    "python_seconds": 122.97163849999197,
+    "native_before_seconds": 124.343,
+    "native_after_seconds": 119.372,
+    "native_before_after_max_step_loss_difference": 8.000000000008e-06,
+    "native_before_after_mean_step_loss_difference": 8.150000000017865e-07,
+    "python_vs_native_after_max_step_loss_difference": 6.30915832522394e-06,
+    "python_vs_native_after_mean_step_loss_difference": 8.076576685884379e-07,
+    "after_evaluation": {
+      "eval": {
+        "edit_errors": 145,
+        "error_rate": 0.0011795426628378983,
+        "examples": 1600,
+        "mean_alignment_loss": 0.2892772210360392,
+        "truth_bases": 122929,
+        "complete_process_seconds": 9.481769416946918
+      },
+      "test": {
+        "edit_errors": 139,
+        "error_rate": 0.0022544440119372,
+        "examples": 800,
+        "mean_alignment_loss": 0.6099780043957189,
+        "truth_bases": 61656,
+        "complete_process_seconds": 4.7850002909544855
+      }
+    },
+    "limitation": "Single full training run per implementation/configuration; timing differences do not establish causal or repeatable improvement"
+  },
+  "encoding_speedup": 1.102984215986151,
+  "python_divided_by_original_ort_forward": 4.264283507382096,
+  "experimental_ort_percent_slower": 10.732408114424597,
+  "native_training_observed_percent_shorter": 3.9978125025132094
+}

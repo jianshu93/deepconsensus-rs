@@ -1,0 +1,32 @@
+{
+  "band_width": 8,
+  "banded_cells": 2038,
+  "banded_loss": 152.58528080052363,
+  "banded_loss_seconds": [
+    0.0001031375,
+    0.00009979375000000001,
+    0.00010373833000000001,
+    0.00010192708,
+    0.00010057458999999999
+  ],
+  "dense_cells": 8484,
+  "dense_loss": 152.58527202326547,
+  "dense_loss_seconds": [
+    0.00031840667,
+    0.0003009075,
+    0.00031022958,
+    0.00031560417,
+    0.00030049583
+  ],
+  "molecules": 10,
+  "note": "Loss timing uses deterministic synthetic logits and the draft CCS as a proxy label. A restricted band changes the objective; this is not a truth accuracy benchmark.",
+  "preprocess_seconds": [
+    0.014056,
+    0.014759416,
+    0.011038125,
+    0.010569,
+    0.008571083
+  ],
+  "subreads": 93,
+  "windows": 1593
+}

@@ -1,0 +1,126 @@
+{
+  "dataset": {
+    "source": "https://storage.googleapis.com/brain-genomics-public/research/deepconsensus/training-tutorial/v1.2/",
+    "splits": {
+      "train": {
+        "examples": 6400,
+        "molecules": 40,
+        "bytes": 26098066,
+        "sha256": "19d32296dd06779269f3193f0b8616cd95ecd37c56798a6d92f8d41b49cb5261",
+        "uncompressed_records_sha256": "d4c353ae629d1bef8d3aa2e0c7f10ef8a35d4f13b0de307fe291014eb2c2c4d8"
+      },
+      "eval": {
+        "examples": 1600,
+        "molecules": 6,
+        "bytes": 5974137,
+        "sha256": "e8e581ae43478f3ea8e5989eb6073d1db3a87bcffe37476243fbcc5cf0bc0cda",
+        "uncompressed_records_sha256": "87a666721fab6b199582427b5ad9698dd0a9b61766a81268bc4be227f3038077"
+      },
+      "test": {
+        "examples": 800,
+        "molecules": 3,
+        "bytes": 3252431,
+        "sha256": "f29701cac19c43605d98fa8d7138e2846eae8936cf3c62577505260a1bfceaf3",
+        "uncompressed_records_sha256": "a8da9fb337005d07584f0e09113f60097e59f8b3a35c550d6d1090bd4bbe910a"
+      }
+    },
+    "molecule_overlap": false,
+    "training_size_factor_vs_earlier_10_molecules": 4.0,
+    "training_window_factor_vs_earlier_1593_windows": 4.017576898932831
+  },
+  "recipe": {
+    "warm_start": "published v1.2",
+    "model_layers": 5,
+    "batch_size": 32,
+    "learning_rate": 3e-06,
+    "beta1": 0.9,
+    "beta2": 0.997,
+    "epsilon": 1e-09,
+    "weight_decay": 0.0,
+    "dropout": 0.0,
+    "shuffle": "pre-shuffled identical file; no in-loop reshuffle",
+    "loss_reg": 0.1,
+    "del_cost": 10.0,
+    "band_width": null
+  },
+  "runs": {
+    "python": {
+      "epoch_seconds": 122.97163849999197,
+      "compile_seconds": 2.4833552499767393,
+      "steady_step_median_seconds": 0.6008332499768585,
+      "mean_training_loss": 0.4716113472357392,
+      "evaluation": {
+        "eval": {
+          "examples": 1600,
+          "mean_alignment_loss": 0.2892770963907242,
+          "edit_errors": 145,
+          "truth_bases": 122929,
+          "error_rate": 0.0011795426628378983,
+          "seconds": 9.355084833921865
+        },
+        "test": {
+          "examples": 800,
+          "mean_alignment_loss": 0.6099781525135041,
+          "edit_errors": 139,
+          "truth_bases": 61656,
+          "error_rate": 0.0022544440119372,
+          "seconds": 4.5687107080593705
+        }
+      }
+    },
+    "rust": {
+      "epoch_seconds": 124.343,
+      "complete_process_seconds": 124.67214399995282,
+      "mean_training_loss": 0.471611,
+      "evaluation": {
+        "eval": {
+          "edit_errors": 145,
+          "error_rate": 0.0011795426628378983,
+          "examples": 1600,
+          "mean_alignment_loss": 0.28927702017110096,
+          "truth_bases": 122929,
+          "complete_process_seconds": 9.490326874889433
+        },
+        "test": {
+          "edit_errors": 139,
+          "error_rate": 0.0022544440119372,
+          "examples": 800,
+          "mean_alignment_loss": 0.6099775694150393,
+          "truth_bases": 61656,
+          "complete_process_seconds": 4.878388541052118
+        }
+      }
+    }
+  },
+  "python_epoch_divided_by_rust_epoch": 0.988971140313423,
+  "max_paired_training_loss_difference": 8.516559600879603e-06,
+  "mean_paired_training_loss_difference": 8.352642130832893e-07,
+  "held_out_baseline": {
+    "eval": {
+      "examples": 1600,
+      "mean_alignment_loss": 0.3094382101297379,
+      "edit_errors": 147,
+      "truth_bases": 122929,
+      "error_rate": 0.0011958122168080761,
+      "seconds": 8.711007416015491
+    },
+    "test": {
+      "examples": 800,
+      "mean_alignment_loss": 0.6369364446401596,
+      "edit_errors": 140,
+      "truth_bases": 61656,
+      "error_rate": 0.002270663033605813,
+      "seconds": 4.440878875087947
+    }
+  },
+  "limitations": [
+    "Single sequential run per framework; approximately one-percent timing difference is not evidence of a winner",
+    "Warm-start one epoch on 6400 examples, not training to convergence",
+    "Common Adam/zero-decay/dropout-free recipe; not the upstream default LAMB/distillation trainer or per-step identity metrics",
+    "Model tensors F32; Rust CPU dynamic program accumulates in F64, TensorFlow in F32",
+    "Separate fine-tuning molecules/splits, but published-checkpoint pretraining overlap is unknown",
+    "Prefix-based molecule selection and only six evaluation/three test molecules",
+    "Window-level truth metrics; not an end-to-end molecule accuracy or calibrated quality study",
+    "CPU macOS ARM64 only; no Linux GPU training measurement"
+  ]
+}

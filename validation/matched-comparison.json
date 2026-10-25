@@ -1,0 +1,139 @@
+{
+  "fixture": {
+    "molecules": 10,
+    "aligned_subreads": 93,
+    "windows": 1593,
+    "output_bases": 109143
+  },
+  "settings": {
+    "batch_windows": 64,
+    "batch_molecules": 2,
+    "skip_above": 0,
+    "ins_trim": 5,
+    "min_quality": 0,
+    "min_length": 1,
+    "max_quality": 93,
+    "tensor_dtype": "F32",
+    "model": "published v1.2",
+    "model_intra_threads": 4,
+    "python_inter_threads": 1,
+    "rayon_threads": 4,
+    "rust_bam_threads": 4,
+    "python_bam_threads": 1,
+    "hardware": "macOS ARM64 CPU, no GPU"
+  },
+  "timings": {
+    "python_checkpoint": {
+      "processing_samples_seconds": [
+        10.78465999988839,
+        10.792291707824916,
+        10.949808791978285
+      ],
+      "median_processing_seconds": 10.792291707824916,
+      "median_model_setup_seconds": 0.12070904090069234
+    },
+    "python_saved": {
+      "processing_samples_seconds": [
+        9.148800708120689,
+        9.27766720787622,
+        9.326244750060141
+      ],
+      "median_processing_seconds": 9.27766720787622,
+      "median_model_setup_seconds": 0.5691866248380393
+    },
+    "python_saved_four_processes": {
+      "processing_samples_seconds": [
+        10.932496499968693,
+        10.922453457955271,
+        11.268268958898261
+      ],
+      "median_processing_seconds": 10.932496499968693,
+      "median_model_setup_seconds": 0.6054839580319822
+    },
+    "rust_burn": {
+      "processing_samples_seconds": [
+        8.941949959,
+        8.926310084,
+        8.874346375
+      ],
+      "median_processing_seconds": 8.926310084,
+      "median_complete_process_seconds": 8.943710000021383
+    },
+    "rust_ort": {
+      "processing_samples_seconds": [
+        1.831210459,
+        1.84268025,
+        2.092139666
+      ],
+      "median_processing_seconds": 1.84268025,
+      "median_complete_process_seconds": 1.9487365421373397
+    }
+  },
+  "rust_ort_vs_python_saved_processing_speedup": 5.03487634812183,
+  "rust_burn_vs_python_saved_processing_speedup": 1.0393619671028471,
+  "output_comparisons": {
+    "python_checkpoint_0": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_checkpoint_1": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_checkpoint_2": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_saved_0": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_saved_1": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_saved_2": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_saved_four_processes_0": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_saved_four_processes_1": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    },
+    "python_saved_four_processes_2": {
+      "identical_sequences": true,
+      "quality_differences": 30,
+      "maximum_phred_difference": 1
+    }
+  },
+  "python_saved_profile": {
+    "processing_seconds": 9.108801791910082,
+    "stages": {
+      "run_model": 8.164055585861206,
+      "preprocess": 0.5789587497711182,
+      "stitch_and_write_fastq": 0.012927055358886719
+    },
+    "formatting_seconds": 0.20858758315443993,
+    "network_seconds": 7.906862748553976
+  },
+  "limitations": [
+    "Three sequential samples per mode; small warm-filesystem-cache fixture",
+    "Processing timings exclude model loading and Python interpreter/import startup",
+    "Original v1.2 algorithms executed on TensorFlow 2.20 with documented import compatibility shims, not its pinned TensorFlow 2.9 environment",
+    "Different backends and execution/pipeline designs; not a language-only comparison",
+    "Native Rust inference computes its host softmax/calibration in f64, while upstream probabilities are f32; observed output qualities differ by at most one Phred point",
+    "No Linux GPU or training-throughput comparison"
+  ]
+}

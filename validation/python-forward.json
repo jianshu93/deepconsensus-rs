@@ -1,0 +1,15 @@
+{
+  "windows": 6400,
+  "batch_size": 64,
+  "threads": 4,
+  "setup_seconds": 0.6061007501557469,
+  "read_seconds": 0.24839904205873609,
+  "samples_seconds": [
+    29.317286332836375,
+    29.622864249860868,
+    29.602185084018856
+  ],
+  "max_probability_difference": 5.7220458984375e-06,
+  "changed_argmax_columns": 0,
+  "timed_scope": "Batch stacking, original SavedModel inference, output collection; warmup, file reading and model loading excluded"
+}

@@ -1,0 +1,50 @@
+{
+  "batch_size": 64,
+  "dataset_read_seconds": 0.323052125,
+  "setup_seconds": 0.001858375,
+  "threads": 4,
+  "timed_scope": "CPU batch construction, encoding, transformer, logit collection; warmup, TFRecord reading, model loading, loss and decoding excluded",
+  "unique_windows": 6400,
+  "variants": {
+    "ort-optimized": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 9,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0000438690185546875,
+      "mean_alignment_loss": 0.4888287197326771,
+      "samples": [
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 8.114445291,
+          "transformer_seconds": 8.114430369
+        }
+      ],
+      "truth_bases": 492324,
+      "versus_original_onnx": {
+        "changed_logit_values": 0,
+        "changed_quality_windows": 0,
+        "changed_sequences": 0,
+        "max_absolute_logit_difference": 0.0
+      }
+    },
+    "ort-reference": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 9,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0000438690185546875,
+      "mean_alignment_loss": 0.4888287197326771,
+      "samples": [
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.073162167,
+          "transformer_seconds": 7.073150082999995
+        }
+      ],
+      "truth_bases": 492324,
+      "versus_original_onnx": null
+    }
+  },
+  "windows": 6400
+}

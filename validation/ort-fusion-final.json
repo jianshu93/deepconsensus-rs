@@ -1,0 +1,73 @@
+{
+  "batch_size": 64,
+  "dataset_read_seconds": 0.326646583,
+  "setup_seconds": 0.001238458,
+  "threads": 4,
+  "timed_scope": "CPU batch construction, encoding, transformer, logit collection; warmup, TFRecord reading, model loading, loss and decoding excluded",
+  "unique_windows": 6400,
+  "variants": {
+    "ort-optimized": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 9,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0000438690185546875,
+      "mean_alignment_loss": 0.4888287197326771,
+      "samples": [
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.732461958,
+          "transformer_seconds": 7.732447669000002
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.7120255,
+          "transformer_seconds": 7.712012460999998
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.661817417,
+          "transformer_seconds": 7.661805376
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.656506042,
+          "transformer_seconds": 7.656495875000001
+        }
+      ],
+      "truth_bases": 492324
+    },
+    "ort-reference": {
+      "changed_argmax_columns": 0,
+      "changed_quality_windows": 9,
+      "changed_sequences": 0,
+      "edit_errors": 896,
+      "max_absolute_logit_difference": 0.0000438690185546875,
+      "mean_alignment_loss": 0.4888287197326771,
+      "samples": [
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.028220542,
+          "transformer_seconds": 7.028208160999998
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 6.855558542,
+          "transformer_seconds": 6.855545041999998
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 6.84881375,
+          "transformer_seconds": 6.848800379000001
+        },
+        {
+          "encoding_seconds": 0.0,
+          "seconds": 7.169724208,
+          "transformer_seconds": 7.169707338000002
+        }
+      ],
+      "truth_bases": 492324
+    }
+  },
+  "windows": 6400
+}

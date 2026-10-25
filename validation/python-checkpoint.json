@@ -1,0 +1,426 @@
+{
+  "tensorflow": "2.20.0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "mode": "checkpoint",
+  "preprocessing_processes": 0,
+  "tf_intra_threads": 4,
+  "tf_inter_threads": 1,
+  "batch_size": 64,
+  "batch_molecules": 2,
+  "molecules": 10,
+  "skip_above": 0,
+  "samples": [
+    {
+      "run_seconds": 10.914333832915872,
+      "setup_seconds": 0.12967383302748203,
+      "processing_seconds": 10.78465999988839,
+      "outcomes": {
+        "empty_sequence": 0,
+        "only_gaps": 0,
+        "failed_quality_filter": 0,
+        "failed_length_filter": 0,
+        "success": 10
+      },
+      "stages": [
+        {
+          "item": "0",
+          "stage": "preprocess",
+          "runtime": 0.055032968521118164,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "run_model",
+          "runtime": 1.6782329082489014,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0026938915252685547,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "1",
+          "stage": "preprocess",
+          "runtime": 0.038947105407714844,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "run_model",
+          "runtime": 1.591784954071045,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0020978450775146484,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "2",
+          "stage": "preprocess",
+          "runtime": 0.22796201705932617,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "run_model",
+          "runtime": 2.775789737701416,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0034270286560058594,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "3",
+          "stage": "preprocess",
+          "runtime": 0.16514921188354492,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "run_model",
+          "runtime": 2.247220993041992,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0028018951416015625,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "4",
+          "stage": "preprocess",
+          "runtime": 0.07603621482849121,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "run_model",
+          "runtime": 1.5431640148162842,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0017352104187011719,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        }
+      ],
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/checkpoint-p0-0.fastq"
+    },
+    {
+      "run_seconds": 10.911621582927182,
+      "setup_seconds": 0.11932987510226667,
+      "processing_seconds": 10.792291707824916,
+      "outcomes": {
+        "empty_sequence": 0,
+        "only_gaps": 0,
+        "failed_quality_filter": 0,
+        "failed_length_filter": 0,
+        "success": 10
+      },
+      "stages": [
+        {
+          "item": "0",
+          "stage": "preprocess",
+          "runtime": 0.056073904037475586,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "run_model",
+          "runtime": 1.708251953125,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0027358531951904297,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "1",
+          "stage": "preprocess",
+          "runtime": 0.038530826568603516,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "run_model",
+          "runtime": 1.6439757347106934,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0024759769439697266,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "2",
+          "stage": "preprocess",
+          "runtime": 0.22896194458007812,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "run_model",
+          "runtime": 2.7419660091400146,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.003515005111694336,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "3",
+          "stage": "preprocess",
+          "runtime": 0.16500425338745117,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "run_model",
+          "runtime": 2.24137806892395,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0026717185974121094,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "4",
+          "stage": "preprocess",
+          "runtime": 0.07650089263916016,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "run_model",
+          "runtime": 1.5239238739013672,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0017139911651611328,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        }
+      ],
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/checkpoint-p0-1.fastq"
+    },
+    {
+      "run_seconds": 11.070517832878977,
+      "setup_seconds": 0.12070904090069234,
+      "processing_seconds": 10.949808791978285,
+      "outcomes": {
+        "empty_sequence": 0,
+        "only_gaps": 0,
+        "failed_quality_filter": 0,
+        "failed_length_filter": 0,
+        "success": 10
+      },
+      "stages": [
+        {
+          "item": "0",
+          "stage": "preprocess",
+          "runtime": 0.05760502815246582,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "run_model",
+          "runtime": 1.6767597198486328,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "0",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0024569034576416016,
+          "num_zmws": 2,
+          "num_examples": 274,
+          "num_subreads": 12
+        },
+        {
+          "item": "1",
+          "stage": "preprocess",
+          "runtime": 0.03868532180786133,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "run_model",
+          "runtime": 1.6673598289489746,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "1",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0029349327087402344,
+          "num_zmws": 2,
+          "num_examples": 260,
+          "num_subreads": 7
+        },
+        {
+          "item": "2",
+          "stage": "preprocess",
+          "runtime": 0.234832763671875,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "run_model",
+          "runtime": 2.8603310585021973,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "2",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0031571388244628906,
+          "num_zmws": 2,
+          "num_examples": 454,
+          "num_subreads": 38
+        },
+        {
+          "item": "3",
+          "stage": "preprocess",
+          "runtime": 0.17106294631958008,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "run_model",
+          "runtime": 2.2669150829315186,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "3",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.003465890884399414,
+          "num_zmws": 2,
+          "num_examples": 360,
+          "num_subreads": 32
+        },
+        {
+          "item": "4",
+          "stage": "preprocess",
+          "runtime": 0.07743287086486816,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "run_model",
+          "runtime": 1.4954109191894531,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        },
+        {
+          "item": "4",
+          "stage": "stitch_and_write_fastq",
+          "runtime": 0.0016901493072509766,
+          "num_zmws": 2,
+          "num_examples": 245,
+          "num_subreads": 14
+        }
+      ],
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/checkpoint-p0-2.fastq"
+    }
+  ],
+  "process_seconds_including_import": 34.333141166949645,
+  "compatibility": [
+    "tf-keras 2.20.1 legacy API",
+    "Read empty ndarray defaults changed to factories by import loader",
+    "unused training optimizer import omitted",
+    "official NLP package imports restricted to the two original layer implementations used by this model"
+  ]
+}

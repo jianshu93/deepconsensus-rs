@@ -1,0 +1,53 @@
+[package]
+name = "deepconsensus-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "BSD-3-Clause"
+description = "Rust sequence correction with a gap-aware DeepConsensus transformer"
+default-run = "deepconsensus-rs"
+
+[lib]
+name = "deepconsensus_rs"
+
+[[bin]]
+name = "deepconsensus-rs"
+path = "src/main.rs"
+
+[[bin]]
+name = "deepconsensus-model"
+path = "src/bin/deepconsensus-model.rs"
+
+[features]
+default = []
+cuda = ["burn/cuda", "burn/fusion", "onnx-cuda"]
+metal = ["burn/metal", "burn/fusion", "onnx-coreml"]
+onnx = ["dep:ort"]
+onnx-coreml = ["onnx", "ort/coreml"]
+onnx-cuda = ["onnx", "ort/cuda"]
+tensorrt = ["onnx-cuda", "ort/tensorrt"]
+
+[dependencies]
+anyhow = "1"
+burn = { version = "=0.22.0", default-features = false, features = ["std", "flex", "optim", "rayon", "simd"] }
+clap = { version = "4", features = ["derive"] }
+crc32c = "0.6"
+flate2 = "1"
+prost = "0.14"
+rand = "0.8"
+rayon = "1"
+rust-htslib = { version = "0.51", default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+snap = "1"
+ort = { version = "=2.0.0-rc.13", optional = true, default-features = false, features = ["std", "load-dynamic", "api-27"] }
+
+[dev-dependencies]
+tempfile = "3"
+
+[patch.crates-io]
+burn-optim = { path = "vendor/burn-optim" }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

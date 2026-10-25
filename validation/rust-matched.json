@@ -1,0 +1,84 @@
+{
+  "burn": [
+    {
+      "filtered": 0,
+      "model_seconds": 8.921259793,
+      "model_windows": 1593,
+      "molecules": 10,
+      "output_bases": 109143,
+      "preprocess_seconds": 0.022488791,
+      "skipped_windows": 0,
+      "total_seconds": 8.941949959,
+      "written": 10,
+      "process_seconds_including_loading": 8.969000083161518,
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/rust-burn-0.fastq"
+    },
+    {
+      "filtered": 0,
+      "model_seconds": 8.909631752,
+      "model_windows": 1593,
+      "molecules": 10,
+      "output_bases": 109143,
+      "preprocess_seconds": 0.020086458999999997,
+      "skipped_windows": 0,
+      "total_seconds": 8.926310084,
+      "written": 10,
+      "process_seconds_including_loading": 8.943710000021383,
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/rust-burn-1.fastq"
+    },
+    {
+      "filtered": 0,
+      "model_seconds": 8.854182665,
+      "model_windows": 1593,
+      "molecules": 10,
+      "output_bases": 109143,
+      "preprocess_seconds": 0.019406124000000004,
+      "skipped_windows": 0,
+      "total_seconds": 8.874346375,
+      "written": 10,
+      "process_seconds_including_loading": 8.890365582890809,
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/rust-burn-2.fastq"
+    }
+  ],
+  "ort": [
+    {
+      "filtered": 0,
+      "model_seconds": 1.8132110399999999,
+      "model_windows": 1593,
+      "molecules": 10,
+      "output_bases": 109143,
+      "preprocess_seconds": 0.020831458000000004,
+      "skipped_windows": 0,
+      "total_seconds": 1.831210459,
+      "written": 10,
+      "process_seconds_including_loading": 1.9487365421373397,
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/rust-ort-0.fastq"
+    },
+    {
+      "filtered": 0,
+      "model_seconds": 1.825467083,
+      "model_windows": 1593,
+      "molecules": 10,
+      "output_bases": 109143,
+      "preprocess_seconds": 0.021071374,
+      "skipped_windows": 0,
+      "total_seconds": 1.84268025,
+      "written": 10,
+      "process_seconds_including_loading": 1.8980998750776052,
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/rust-ort-1.fastq"
+    },
+    {
+      "filtered": 0,
+      "model_seconds": 2.070320167,
+      "model_windows": 1593,
+      "molecules": 10,
+      "output_bases": 109143,
+      "preprocess_seconds": 0.021598875999999996,
+      "skipped_windows": 0,
+      "total_seconds": 2.092139666,
+      "written": 10,
+      "process_seconds_including_loading": 2.151466083014384,
+      "output": "/Users/jianshuzhao/Documents/Codex/2026-10-09/what-x20/work/python-results/rust-ort-2.fastq"
+    }
+  ]
+}
